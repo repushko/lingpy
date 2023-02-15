@@ -2,10 +2,10 @@
 Module handels all global parameters used in a LingPy session.
 """
 from lingpy._settings import rcParams
-from lingpy.data.model import Model
+from lingpy.data.model import Model, load_dvt
 
 # load diacritics, vowels, tones
-diacritics, vowels, tones = ('!:|¯ʰʱʲʳʴʵʶʷʸʹʺʻʼʽʾʿˀˀ ˁ˂˃˄˅ˆˈˉˊˋˌˍˎˏːˑ˒˓˔˕˖˗˞˟ˠˡˢˣˤˬ˭ˮ˯˰˱˲˳˴˵˶˷˸˹˺˻˼˽˾˿̀́̂̃̄̅̆̇̈̉̊̋̌̍̎̏̐̑̒ՙٰܑٖ߲߫߬߭߮߯߰߱߳ᴬᴭᴮᴯᴰᴱᴲᴳᴴᴵᴶᴷᴸᴹᴺᴻᴼᴽᴾᴿᵀᵁᵂᵃᵄᵅᵆᵇᵈᵉᵊᵋᵌᵍᵎᵏᵐᵑᵒᵓᵔᵕᵖᵗᵘᵙᵚᵛᵜᵝᵞᵟᵠᵡᵢᵣᵤᵥᵦᵧᵨᵩᵪᵸᶛᶜᶝᶞᶟᶠᶡᶢᶣᶤᶥᶦᶧᶨᶩᶪᶫᶬᶭᶮᶯᶰᶱᶲᶳᶴᶵᶶᶷᶸᶹᶺᶻᶼᶽᶾᶿ᷎᷂᷊᷏᷀᷁᷃᷄᷅᷆᷇᷈᷉᷋᷌ᷓᷔᷕ᷍ⁱ⁺⁻⁼⁽⁾ⁿ₊₋₌₍₎ₐₑₒₓₔₕₖₗₘₙₚₛₜ⃒⃓⃘⃙⃚⃥⃦⃪⃨⃐⃑⃔⃕⃖⃗⃛⃜⃧⃩→⇒⨧ⱼⱽⵯⷠⷡⷢⷣⷤⷥⷦⷧⷨⷩⷪⷫⷬⷭⷮⷯⷰⷱⷲꚜꚝꜛꜜꜝꜞꜟꞈ꞉꞊꣠꣡꣢꣣꣤꣥꣦꣧꣨꣩꣪꣫꣬꣭꣮꣯꣰꣱ꩰꭜꭞ︠︡︢︣︤︥︦\uf1af̲', 'ṍʯεaeiouyáãæíõøúĩıœũūǒǝȇȗɐɑɒɔɘəɚɛɜɞɤɨɪɯɵɶɷɿʅʉʊʌʏᴀᴇᴜẽỹṳ', '¹²³⁴⁵⁶⁷⁸⁹⁰₁₂₃₄₅₆₇₈₉₀0123456789˥˦˧˨˩˪˫-꜈-꜉-꜊-꜋-꜌-꜍-꜎-꜏-꜐-꜑-꜒-꜓-꜔-꜕-꜖-ꜗ-ꜘ-ꜙ-ꜚ-꜀-꜁-꜂-꜃-꜄-꜅-꜆-꜇')
+diacritics, vowels, tones = load_dvt()
 
 # these are lexstat-specific parameters, all prefixed by "lexstat"
 lexstat = dict(

@@ -21,8 +21,8 @@ doc/*
 /generated/
 /include
 /lingpy.egg-info
-/lingpy/data/models/*/*.bin
-/lingpy/lingpy-*.qlc
+#/lingpy/data/models/*/*.bin
+#/lingpy/lingpy-*.qlc
 /lingpy/plugins
 /lingpy/plugins/
 /lingpy/_plugins
