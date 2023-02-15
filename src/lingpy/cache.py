@@ -9,7 +9,7 @@ import pathlib
 from lingpy import __version__
 
 # Fix for the lambda
-DIR = pathlib.Path().joinpath(pathlib.Path().absolute(), "lingpy/data/models/cache/2.6.9")
+DIR = pathlib.Path().joinpath(pathlib.Path().absolute(), "lingpy/data/cache/2.6.9")
 
 def path(filename, d=DIR):
     return d.joinpath(pathlib.Path(filename).name + '.pkl')
