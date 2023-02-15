@@ -200,7 +200,7 @@ def rc(rval=None, rcParams_=None, **keywords):
     for key in keywords:
         if key == "schema":
             if keywords[key] in ["qlc", 'ipa']:
-                diacritics, vowels, tones = load_dvt(path='')
+                diacritics, vowels, tones = ('!:|¯ʰʱʲʳʴʵʶʷʸʹʺʻʼʽʾʿˀˀ ˁ˂˃˄˅ˆˈˉˊˋˌˍˎˏːˑ˒˓˔˕˖˗˞˟ˠˡˢˣˤˬ˭ˮ˯˰˱˲˳˴˵˶˷˸˹˺˻˼˽˾˿̀́̂̃̄̅̆̇̈̉̊̋̌̍̎̏̐̑̒ՙٰܑٖ߲߫߬߭߮߯߰߱߳ᴬᴭᴮᴯᴰᴱᴲᴳᴴᴵᴶᴷᴸᴹᴺᴻᴼᴽᴾᴿᵀᵁᵂᵃᵄᵅᵆᵇᵈᵉᵊᵋᵌᵍᵎᵏᵐᵑᵒᵓᵔᵕᵖᵗᵘᵙᵚᵛᵜᵝᵞᵟᵠᵡᵢᵣᵤᵥᵦᵧᵨᵩᵪᵸᶛᶜᶝᶞᶟᶠᶡᶢᶣᶤᶥᶦᶧᶨᶩᶪᶫᶬᶭᶮᶯᶰᶱᶲᶳᶴᶵᶶᶷᶸᶹᶺᶻᶼᶽᶾᶿ᷎᷂᷊᷏᷀᷁᷃᷄᷅᷆᷇᷈᷉᷋᷌ᷓᷔᷕ᷍ⁱ⁺⁻⁼⁽⁾ⁿ₊₋₌₍₎ₐₑₒₓₔₕₖₗₘₙₚₛₜ⃒⃓⃘⃙⃚⃥⃦⃪⃨⃐⃑⃔⃕⃖⃗⃛⃜⃧⃩→⇒⨧ⱼⱽⵯⷠⷡⷢⷣⷤⷥⷦⷧⷨⷩⷪⷫⷬⷭⷮⷯⷰⷱⷲꚜꚝꜛꜜꜝꜞꜟꞈ꞉꞊꣠꣡꣢꣣꣤꣥꣦꣧꣨꣩꣪꣫꣬꣭꣮꣯꣰꣱ꩰꭜꭞ︠︡︢︣︤︥︦\uf1af̲', 'ṍʯεaeiouyáãæíõøúĩıœũūǒǝȇȗɐɑɒɔɘəɚɛɜɞɤɨɪɯɵɶɷɿʅʉʊʌʏᴀᴇᴜẽỹṳ', '¹²³⁴⁵⁶⁷⁸⁹⁰₁₂₃₄₅₆₇₈₉₀0123456789˥˦˧˨˩˪˫-꜈-꜉-꜊-꜋-꜌-꜍-꜎-꜏-꜐-꜑-꜒-꜓-꜔-꜕-꜖-ꜗ-ꜘ-ꜙ-ꜚ-꜀-꜁-꜂-꜃-꜄-꜅-꜆-꜇')
                 rcParams_['asjp'] = Model('asjp')
                 rcParams_['sca'] = Model('sca')
                 rcParams_['dolgo'] = Model('dolgo')
@@ -219,7 +219,7 @@ def rc(rval=None, rcParams_=None, **keywords):
                 rcParams_['model'] = rcParams['sca']
 
             elif keywords[key] in ['evolaemp', 'el', 'asjp']:
-                diacritics, vowels, tones = load_dvt(path='el')
+                diacritics, vowels, tones = ('*"', 'aeiou3E', '¹²³⁴⁵⁶⁰₁₂₃₄₅₆₀012456789⁻')
                 rcParams_['asjp'] = Model('asjp_el')
                 rcParams_['sca'] = Model('sca_el')
                 rcParams_['dolgo'] = Model('dolgo_el')
