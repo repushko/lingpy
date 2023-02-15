@@ -23,7 +23,8 @@ def load(filename, d=DIR):
 
 
 def dump(data, filename, d=DIR):
-    if not d.exists():
-        d.mkdir(parents=True)  # pragma: no cover
-    with path(filename, d=d).open('wb') as fp:
-        pickle.dump(data, fp)
+    return
+#    if not d.exists():
+#        d.mkdir(parents=True)  # pragma: no cover
+#    with path(filename, d=d).open('wb') as fp:
+#        pickle.dump(data, fp)
