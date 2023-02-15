@@ -6,11 +6,10 @@ results of these operations.
 import pickle
 import pathlib
 
-from appdirs import user_cache_dir
 from lingpy import __version__
 
 
-DIR = pathlib.Path(user_cache_dir('lingpy', version=__version__))
+DIR = pathlib.Path("./data/cache/2.6.9/")
 
 
 def path(filename, d=DIR):
