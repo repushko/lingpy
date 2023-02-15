@@ -8,9 +8,7 @@ import pathlib
 
 from lingpy import __version__
 
-
-DIR = pathlib.Path("./data/cache/2.6.9/")
-
+DIR = pathlib.Path().joinpath(pathlib.Path().absolute(), "data/models/cache/2.6.9")
 
 def path(filename, d=DIR):
     return d.joinpath(pathlib.Path(filename).name + '.pkl')
@@ -22,8 +20,7 @@ def load(filename, d=DIR):
 
 
 def dump(data, filename, d=DIR):
-    return
-#    if not d.exists():
-#        d.mkdir(parents=True)  # pragma: no cover
-#    with path(filename, d=d).open('wb') as fp:
-#        pickle.dump(data, fp)
+    if not d.exists():
+        d.mkdir(parents=True)  # pragma: no cover
+    with path(filename, d=d).open('wb') as fp:
+        pickle.dump(data, fp)
